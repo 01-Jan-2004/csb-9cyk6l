@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Items</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Available Items</h1>
+    <ul class="item-list">
+      <li class="item">
+        <div class="item-image">
+          <img src="item1.jpg" alt="Item 1" />
+        </div>
+        <div class="item-details">
+          <h2>Items</h2>
+          <div class="quantity">
+            <button class="decrement-button" onclick="decrementQuantity(1)">
+              -
+            </button>
+            <input type="text" id="quantity-1" value="0" readonly />
+            <button class="increment-button" onclick="incrementQuantity(1)">
+              +
+            </button>
+          </div>
+          <div class="amount">Amount: $<span id="amount-1">0</span></div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="item-image">
+          <img src="item2.jpg" alt="Item 2" />
+        </div>
+        <div class="item-details">
+          <h2>Items</h2>
+          <div class="quantity">
+            <button class="decrement-button" onclick="decrementQuantity(2)">
+              -
+            </button>
+            <input type="text" id="quantity-2" value="0" readonly />
+            <button class="increment-button" onclick="incrementQuantity(2)">
+              +
+            </button>
+          </div>
+          <div class="amount">Amount: $<span id="amount-2">0</span></div>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
